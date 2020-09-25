@@ -13,4 +13,4 @@ I will be showing you the journey, How I learned [`JAVASCRIPT`](https://develope
 The time i started this journey is 09/24/2020.
 
 #### Keep Hustling :hugs:
-[`Himanshu'](https://github.com/himanshutiwari15)
+[`Himanshu`](https://github.com/himanshutiwari15)
