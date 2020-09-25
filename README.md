@@ -10,7 +10,7 @@
 
 ## What is REPO for ?
 I will be showing you the journey, How I learned [`JAVASCRIPT`](https://developer.mozilla.org/en-US/docs/Web/JavaScript) :firecracker:
-The time i started this journey is 09/24/2020.
+The Day I started this journey is 09/24/2020.
 
 ## Different Functions for Arrays in javascript
 
