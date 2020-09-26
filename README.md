@@ -1,5 +1,5 @@
 # handy-javascript
-`javascript` - `beginner` - `Arrays` - `Functions`
+`javascript` - `beginner` - `Arrays` - `Functions` - `objects`
 
 ![image of javascript](https://gtracademy.com/wp-content/uploads/2020/02/JS-article-2.jpg)
 
@@ -46,6 +46,41 @@ splice()	| Adds/Removes elements from an array
 toString()	| Converts an array to a string, and returns the result
 unshift()	| Adds new elements to the beginning of an array, and returns the new length
 valueOf()	| Returns the primitive value of an array
+
+## Accessing Properties on an Object
+There are two ways to access properties on an object:
+- Dot Notation
+- Bracket Notation
+
+#### Dot Notation
+
+````javascript
+let obj = {
+  cat: 'meow',
+  dog: 'woof'
+};
+let sound = obj.cat;
+console.log(sound);
+// meow
+````
+
+#### Bracket Notation
+
+````javascript
+let obj = {
+  cat: 'meow',
+  dog: 'woof'
+};
+let sound = obj['cat'];
+console.log(sound);
+// meow
+````
+
+### Conclusion
+
+> Use the Dot Notation. But if you’re dealing with invalid identifier or variables, use the Bracket notation.
+
+**Read this Article for more info**  [Dot VS Bracket](https://medium.com/dailyjs/dot-notation-vs-bracket-notation-eedea5fa8572)
 
 #### Keep Hustling :hugs:
 [`Himanshu`](https://github.com/himanshutiwari15)
