@@ -1,5 +1,6 @@
 # handy-javascript
-`javascript` - `beginner` - `Arrays` - `Functions` - `objects`
+Content
+`javascript` - `beginner` - `Arrays` - `Functions` - `objects` - `DOM & BOM` - `Elements & Element.Attributes`
 
 ![image of javascript](https://gtracademy.com/wp-content/uploads/2020/02/JS-article-2.jpg)
 
@@ -85,7 +86,22 @@ console.log(sound);
 ## Closures in Javascript
 > A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
+## DOM (Document Object Model)
+> The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually, that means JavaScript, although modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language, as such.
 
+![DOM](http://www.w3schools.com/js/pic_htmltree.gif)
+
+## BOM (Browser Object Model)
+>The Browser Object Model (BOM) allows JavaScript to talk to the browser about matters other than the content of the page.
+There are no official standards for the BOM, albeit browser vendors have implemented almost the same features for interoperability.
+
+![BOOM](https://learn.javascript.ru/article/browser-environment/windowObjects.png)
+
+## Elements and Element.Attributes
+One Cannot learn and memorise all of these elements and their respective attributes, so what you can do is save or bookmark these links.
+> [Element.Attributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes) Read these MDN Docs. They will help in the best ways. 
+
+> [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
 #### Keep Hustling :hugs:
 [`Himanshu`](https://github.com/himanshutiwari15)
