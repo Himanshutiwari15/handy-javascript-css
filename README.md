@@ -14,6 +14,15 @@ Content
 I will be showing you the journey, How I learned [`JAVASCRIPT`](https://developer.mozilla.org/en-US/docs/Web/JavaScript) :firecracker:
 The Day I started this journey is 09/24/2020.
 
+## Variables
+In Javascript variables are declared with `var`, `let`, and `const`. With so many options which one should you choose? Let's break it down:
+* [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var): Main variable instantiator pre-ES6, no longer in common usage
+  * Can be scoped globally or to a function, but can be re-declared elsewhere in the code making it less trustworthy than its newer counterparts `let` and `const`
+* [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let): The updateable variable brought to you by ES6
+  * A block -> `{}` scoped variable for when you need something updateable that cannot be redeclared in the same block
+* [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): The non-updateable variable brought to you by ES6
+  * A recommended default for declaring variables unless you have a case for `let` as it is block scoped like `let`, but cannot be updated or redeclared once declared
+
 ## Different Functions for Arrays in javascript
 
 **Method** | **Discription**
