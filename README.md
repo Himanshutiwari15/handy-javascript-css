@@ -23,6 +23,45 @@ In Javascript variables are declared with `var`, `let`, and `const`. With so man
 * [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): The non-updateable variable brought to you by ES6
   * A recommended default for declaring variables unless you have a case for `let` as it is block scoped like `let`, but cannot be updated or redeclared once declared
 
+## Some naming conventions
+In Javscript some Naming convention has been set aside
+For Variables we use camelCase of naming convention
+Something like this
+````// bad
+let firstname = 'Robin';
+ 
+// bad
+let first_name = 'Robin';
+ 
+// bad
+let FIRSTNAME = 'Robin';
+ 
+// bad
+let FIRST_NAME = 'Robin';
+ 
+// good
+let firstName = 'Robin';
+````
+For boolean we use 'is' or 'has' keyword before the variable like 
+````
+let isVisible = true;
+let hasEncryption = true;
+````
+JavaScript functions are written in camel case too. In addition, it's a best practice to actually tell what the function is doing by giving the function name a verb as prefix. Like so
+
+````
+// bad
+function name(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
+ 
+// good
+function getName(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
+````
+There is more so please do check [this](https://www.robinwieruch.de/javascript-naming-conventions)
+
 ## Different Functions for Arrays in javascript
 
 **Method** | **Discription**
