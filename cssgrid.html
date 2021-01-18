@@ -1,0 +1,167 @@
+<!-- 
+How to read
+Read from top to down and read with comments also comment and uncomment accordingly 
+as you try different things.
+I hope you have prior knowledge of CSS basics so that you don't act noob here ;) LOL -->
+
+<!-- 
+The whole HTML is full of 
+GOLDEN WORDS, so do read them as soon as they encounter -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-GRID-SYSTEM</title>
+    <style>
+        .container {
+            display: grid;
+            /*
+            GOLDEN WORDS : 1 
+            So when we start that is when we begin we begin by making the main container as display: grid; 
+            and that's really important thing to understand. After that using a very basic property that is 
+            grid-template-columns which takes number of columns and their width. The width can be in pixel
+            or in fr... most commonly fr, fr divides the screen in columns..
+            let's talk with example see GW :2 where fr is written  */
+
+            /* grid-template-columns: 300px 120px 120px;
+            grid-template-columns: 120px auto 120px; */
+
+            /*
+            GOLDEN WORDS : 2 
+            here in the example bellow the screen is divided in 2+4+2 columns and the first column is of 
+            2 columns combined together and second column is of 4 columns combined together.... this is
+            how it goes */
+
+            /* grid-template-columns: 2fr 4fr 2fr; */
+
+            /* Repeat actually repeats the number of columns or rows , used accordingly
+            and i.e with width of auto or 200px in this case */
+
+            /* grid-template-columns: repeat(4, auto); */
+
+            /* GridGap is simple it's like margin for grids try them you will understand */
+
+            grid-gap: 1rem;
+            /* grid-column-gap: 2rem;
+            grid-row-gap: 3rem; */
+
+            /* grid-template-rows: 20px 20px 20px ; */
+            /* grid-template-rows: repeat(4, auto); */
+
+            /*
+            GOLDEN WORDS : 3
+            So you might have understood the above statement done for rows as similar was done for 
+            column but what is this auto rows property,
+            i.e. for all the left rows as we made 9 items and in above statement we gave width to 
+            only 3 , so for rest of the others we can give width using this
+            grid-auto-rows: _____; property
+            try working with it for more explaination */
+
+            /* grid-auto-rows: 120px; */
+
+            /*
+            GOLDEN WORDS : 4 
+            GTC or grid-template-columns: ___; can be used in a bit different way for auto-fit amd
+            minmax property and basically it has a certain reason for that
+            reason : repeat contains 2 parameters, number of rows or columns and size of them 
+                     so here auto-fit is for number of columns i.e. it will adjust acordingly, to the
+                     screen and minmax property is for setting the minimum and maximum width of the item 
+                     grids. Here 300px is minimum width and 1fr(fraction) is for maximum width i.e. for 1 .item
+                     on screen alone... 
+            try practcing this few times and you will understand this well
+            few devs use media queries instead so we can use that as well 
+            */
+
+            grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+
+            /* justify-content: center; */
+
+
+            /*
+            GOLDEN WORDS : 5
+            A very poweful tool to make designes  of a website is grid absolutely 
+            but the area tool in grid is something that makes it so so powerful
+
+            What we did is we created took 3 items from container div and gave them id's 
+            we then game them grid-area of anything relvant let's say a name (check below)
+            after that in the container itself, we made the grid-template-areas: ___;
+            this property uses those areas in a way to represent design
+
+            we use a 2D representation 
+            ___________________________________________
+            |__________|__________|_________|_________|
+            |__________|__________|_________|_________|
+            |__________|__________|_________|_________|
+            
+            
+            i.e. every name is 1fr and we write it as we want it 
+            to appear, better way to understand this is to run the below code and see.... 
+             */
+            grid-template-areas: 
+            "itemOne itemOne itemTwo itemTwo"
+            "itemThree itemThree itemTwo itemTwo";
+
+        }
+
+        .item {
+            /* height: 100px;
+            width: 100px; */
+            background-color: rgb(62, 210, 255);
+            border: 2px solid black;
+            /* margin: 3px; */
+            padding: 10px 5px;
+        }
+
+        /* 
+        GOLDEN WORDS : 4
+        Doing this for learning the spanning
+        So we selected the first item using first child selector property and now used 
+        grid-column for spanning through column and the way i did is by giving the start first and then
+        a "/" with a span keyword and then end 2, results were item 1 now spans all the way to col-2 
+        the very same can be done with grid-row selector.
+        Next 4 lines are another way of representation and nothing else
+        This will be more clear only if you play more with this, try experimenting in the below statements
+        */
+        .item:first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+
+        /* Check them for golden word 5 */
+        
+        #one{
+            grid-area: itemOne;
+        }
+        #two{
+            grid-area: itemTwo;
+        }
+        #three{
+            grid-area: itemThree;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id = one class="item">This is Item-1</div>
+        <div id = two class="item">This is Item-2</div>
+        <div id = three class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div>
+
+</body>
+
+</html>
