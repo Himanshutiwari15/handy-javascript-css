@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            height: 500px;
+            border: 2px solid black;
+
+            /* Here we tell that now you are a flexbox */
+            display: flex;
+            /* Display flex does makes the things order horizontally
+                and with complete height */
+
+
+            /* flex direction command basically gives the 
+                direction that can be row or column or row-reverse or 
+                column-reverse,
+                row           -      shows in row from left to right 
+                column        -      shows in column from top to bottom 
+                row-reverse   -      shows in reverse order from the right side
+                column-reverse-      shows in reverse order from bottom to top 
+                */
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+            /* This is for flex wrapping , the help to your media queries */
+            flex-wrap: wrap;
+
+            /* This is a short hand, basically to put on all both direction
+                and wrap condition */
+            flex-flow: row-reverse wrap;
+
+            /* BONUS ;)
+                You can use justify-content and align-items
+                justify can be used to work horizontaly
+                align can be used to work vertically  */
+            
+            justify-content: center;/*For Centre*/
+            justify-content: space-between;/*Space only in between the 2 elements*/
+            justify-content: space-evenly;/*even space both sides of elements*/
+            justify-content: space-around;
+
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+        }
+
+        .item {
+            margin: 2px;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: rgb(0, 153, 255);
+        }
+
+        #box-1{
+            /* 
+            Flex item properties
+            Higher the order , later it shows up in the container
+            if order is bigger then the item gets later in the 
+            container 
+            */
+            order: 2;
+
+            /*
+            Grow and Shrink basically works at the time of 
+            checking responsiveness , grow makes growth of the
+            item fast similar opposite with shrink 
+            */
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        #box-2{
+            flex-basis: 300px;
+            /* when flex-direction is set to row flex-basis will control width
+            when flex-direction is set to column flex-basis will control height */
+        }
+
+        #box-3{
+            flex: 2 2 220px;
+            /* A Combo you can use for grow shrink and basis all
+            together */
+
+            align-self: center;
+            /* Most time the property i use is this
+            it aligns item individually */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="box-1">Box 1</div>
+        <div class="item" id="box-2">Box 2</div>
+        <div class="item" id="box-3">Box 3</div>
+
+        <!-- Commented for less work in styling flex item
+             you can uncomment them and use as you wish -->
+
+        <!-- <div class="item" id="box-4">Box 4</div>
+        <div class="item" id="box-5">Box 5</div>
+        <div class="item" id="box-6">Box 6</div>
+        <div class="item" id="box-7">Box 7</div>
+        <div class="item" id="box-8">Box 8</div> -->
+    </div>
+</body>
+
+</html>
