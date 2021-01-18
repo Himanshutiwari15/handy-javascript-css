@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes-animation</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            width: 250px;
+            height: 100px;
+            position: relative;
+            /* animation-name: trial; */
+            animation-name: trial2;
+            animation-duration: 0.5s;
+            animation-iteration-count: 5;
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 2s; */
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes trial2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes trial {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
