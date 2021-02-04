@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(250, 241, 241);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation{
+    width: 1033px;
+    margin: 25px auto;
+}
+.container{
+    
+    display: flex;
+}
+
+.nav-icon-holder{
+    padding-right: 14px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+}
+
+.nav-link-holder{
+    /* padding-left: 14px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkbox{
+    /* padding: 10px 10px; */
+    margin: 0px 6px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(202, 194, 194);
+}
+
+.link-text{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.link-text:hover{
+    color: blue;
+}
+
+.non-linkbox{
+    padding-left: 42px;
+    font-size: 14px;
+}
+
+.non-link{
+    color:  rgb(49, 49, 49) !important;
+    /* border-bottom: 0px solid rgb(202, 194, 194) !important; */
+}
+
+span{
+    font-weight: bold;
+}
+
+.button-holder{
+    padding-left: 10px;
+}
+
+button{
+    padding: 11px 11px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(88, 88, 255);
+    text-decoration: none;
+}
+
+.nav-link-holder{
+    padding-top: 10px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgb(202, 194, 194);
+}
